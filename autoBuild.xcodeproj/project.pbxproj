@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BA210D5F4681A68DC736E94 /* Pods_autoBuild.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10467B88FB7F26A2750BA60F /* Pods_autoBuild.framework */; };
 		9DBD871C2313848200FF3D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD871B2313848200FF3D7D /* AppDelegate.swift */; };
 		9DBD871E2313848200FF3D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD871D2313848200FF3D7D /* ViewController.swift */; };
 		9DBD87212313848200FF3D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD871F2313848200FF3D7D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03378D34866EA77906AA0FF1 /* Pods-autoBuild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autoBuild.release.xcconfig"; path = "Target Support Files/Pods-autoBuild/Pods-autoBuild.release.xcconfig"; sourceTree = "<group>"; };
+		10467B88FB7F26A2750BA60F /* Pods_autoBuild.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autoBuild.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBD87182313848200FF3D7D /* autoBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBD871B2313848200FF3D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DBD871D2313848200FF3D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9DBD87222313848600FF3D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBD87252313848600FF3D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DBD87272313848600FF3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC79BD49F787AB4DF8B0D79 /* Pods-autoBuild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autoBuild.debug.xcconfig"; path = "Target Support Files/Pods-autoBuild/Pods-autoBuild.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA210D5F4681A68DC736E94 /* Pods_autoBuild.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24BA9CF76A3503B533634BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10467B88FB7F26A2750BA60F /* Pods_autoBuild.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DBD870F2313848200FF3D7D = {
 			isa = PBXGroup;
 			children = (
 				9DBD871A2313848200FF3D7D /* autoBuild */,
 				9DBD87192313848200FF3D7D /* Products */,
+				DB0F7E14A495A9E4E416ADE1 /* Pods */,
+				24BA9CF76A3503B533634BED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = autoBuild;
 			sourceTree = "<group>";
 		};
+		DB0F7E14A495A9E4E416ADE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDC79BD49F787AB4DF8B0D79 /* Pods-autoBuild.debug.xcconfig */,
+				03378D34866EA77906AA0FF1 /* Pods-autoBuild.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DBD872A2313848600FF3D7D /* Build configuration list for PBXNativeTarget "autoBuild" */;
 			buildPhases = (
+				A235BF33C6B42701904AE667 /* [CP] Check Pods Manifest.lock */,
 				9DBD87142313848200FF3D7D /* Sources */,
 				9DBD87152313848200FF3D7D /* Frameworks */,
 				9DBD87162313848200FF3D7D /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A235BF33C6B42701904AE667 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autoBuild-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DBD87142313848200FF3D7D /* Sources */ = {
@@ -280,9 +331,10 @@
 		};
 		9DBD872B2313848600FF3D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC79BD49F787AB4DF8B0D79 /* Pods-autoBuild.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DZJDGXKN9N;
 				INFOPLIST_FILE = autoBuild/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -291,6 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.irvinghuang.autoBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = autoBuild_Dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,9 +351,11 @@
 		};
 		9DBD872C2313848600FF3D7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03378D34866EA77906AA0FF1 /* Pods-autoBuild.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = DZJDGXKN9N;
 				INFOPLIST_FILE = autoBuild/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.irvinghuang.autoBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = autoBuild_Dis;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
