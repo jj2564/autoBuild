@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "First Test of Fastlane"
+  lane :test_on_Simulator do
+    xcodebuild(workspace: "autoBuild.xcworkspace",
+              device: "iPhone XR",
+              scheme: "autoBuild")
+  end
+
+  desc "create the ipa"
+  lane :beta do
+    gym(scheme: "autoBuild")
+  end
+end

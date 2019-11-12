@@ -13,6 +13,7 @@
 		9DBD87212313848200FF3D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD871F2313848200FF3D7D /* Main.storyboard */; };
 		9DBD87232313848600FF3D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD87222313848600FF3D7D /* Assets.xcassets */; };
 		9DBD87262313848600FF3D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD87242313848600FF3D7D /* LaunchScreen.storyboard */; };
+		9DC48A0F2334BBCE00FDF320 /* SSOConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC48A0E2334BBCE00FDF320 /* SSOConnect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9DBD87222313848600FF3D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DBD87252313848600FF3D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DBD87272313848600FF3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC48A0E2334BBCE00FDF320 /* SSOConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSOConnect.swift; sourceTree = "<group>"; };
 		BDC79BD49F787AB4DF8B0D79 /* Pods-autoBuild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autoBuild.debug.xcconfig"; path = "Target Support Files/Pods-autoBuild/Pods-autoBuild.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				9DBD87222313848600FF3D7D /* Assets.xcassets */,
 				9DBD87242313848600FF3D7D /* LaunchScreen.storyboard */,
 				9DBD87272313848600FF3D7D /* Info.plist */,
+				9DC48A0E2334BBCE00FDF320 /* SSOConnect.swift */,
 			);
 			path = autoBuild;
 			sourceTree = "<group>";
@@ -85,7 +88,6 @@
 				BDC79BD49F787AB4DF8B0D79 /* Pods-autoBuild.debug.xcconfig */,
 				03378D34866EA77906AA0FF1 /* Pods-autoBuild.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBD871E2313848200FF3D7D /* ViewController.swift in Sources */,
+				9DC48A0F2334BBCE00FDF320 /* SSOConnect.swift in Sources */,
 				9DBD871C2313848200FF3D7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,8 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tryGoogle()
     }
 
 
+    func tryGoogle() {
+        _ = WebAuthenticationSession.init(url: URL(string: "https://www.google.com")!, callbackURLScheme: nil) { (url, error ) in
+            print(url as Any)
+            print(error as Any)
+        }
+    }
+    
 }
 
